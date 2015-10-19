@@ -1,0 +1,9 @@
+option java_package = "com.why.tool.proto";
+
+message ByteList {
+	repeated bytes elements = 1;
+}
+
+message IntList {
+	repeated int32 elements = 1;
+}

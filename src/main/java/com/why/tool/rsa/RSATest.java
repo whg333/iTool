@@ -8,9 +8,14 @@ import java.security.PublicKey;
 public class RSATest {
 	
 	public static void main(String[] args) throws Exception {
-		InputStream publicInput = new FileInputStream("C:\\rsa_public_key.pem");
-		InputStream privateInput = new FileInputStream("C:\\pkcs8_rsa_private_key.pem");
-		//InputStream privateInput = new FileInputStream("C:\\rsa_private_key.pem");
+	    ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		InputStream publicInput = loader.getResourceAsStream("java_rsa_public_key.pem");
+		InputStream privateInput = loader.getResourceAsStream("java_pkcs8_rsa_private_key.pem");
+		
+		//InputStream publicInput = new FileInputStream("C:\\java_rsa_public_key.pem");
+        //InputStream privateInput = new FileInputStream("C:\\java_pkcs8_rsa_private_key.pem");
+		//InputStream privateInput = new FileInputStream("C:\\java_rsa_private_key.pem");
+		
 		PublicKey publicKey = RSAUtils.loadPublicKey(publicInput);
 		PrivateKey privateKey = RSAUtils.loadPrivateKey(privateInput);
 		

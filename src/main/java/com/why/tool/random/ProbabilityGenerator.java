@@ -1,5 +1,7 @@
 package com.why.tool.random;
 
+/** use the {@link com.why.tool.random.RandomUtil RandomUtil} instead */
+@Deprecated
 public interface ProbabilityGenerator {
 
     /**

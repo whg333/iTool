@@ -2,6 +2,8 @@ package com.why.tool.random;
 
 import java.util.Random;
 
+/** use the {@link com.why.tool.random.RandomUtil RandomUtil} instead */
+@Deprecated
 public class ProbabilityGeneratorImpl implements ProbabilityGenerator {
 
 	private static final ProbabilityGeneratorImpl DEFAULT_INSTANCE_IMPL = new ProbabilityGeneratorImpl();

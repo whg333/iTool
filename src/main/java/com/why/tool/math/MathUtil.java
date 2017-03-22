@@ -1,10 +1,5 @@
 package com.why.tool.math;
 
-/**
- * 
- * @author luzj
- * 
- */
 public class MathUtil {
 
 	/**

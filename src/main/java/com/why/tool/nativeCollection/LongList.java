@@ -1,6 +1,5 @@
 package com.why.tool.nativeCollection;
 
-
 public interface LongList {
 
     void ensureCapacity(int minCapacity);

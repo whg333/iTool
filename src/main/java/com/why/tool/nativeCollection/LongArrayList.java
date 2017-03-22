@@ -4,9 +4,6 @@ import java.util.Arrays;
 
 /**
  * int array list
- * 
- * @author luzj
- *
  */
 public class LongArrayList implements LongList {
 

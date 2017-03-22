@@ -7,8 +7,6 @@ import java.util.Set;
 
 /**
  * 操作properties文件的工具类
- * @author luzj
- *
  */
 public class PropertiesUtil {
 
